@@ -6,6 +6,8 @@
       </div>
       <div v-else>
         <p>Welcome, {{ user.name }}!</p>
+        <Link :href="route('logout')" method="post">Logout</Link>
+        <Link :href="route('about')" >About</Link>
       </div>
     </div>
   </template>
